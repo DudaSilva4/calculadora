@@ -1,13 +1,53 @@
 
-.linha{
+#tela{
     display: grid;
-    grid-template-columns: 150px 150px 150px;
+   grid-column: 1/span 4;
+   border: 10px solid rgb(255, 255, 255);
 }
-
+#botao{
+    display: grid;
+    grid-template-columns: 500px 500px 500px 500px;
+    grid-template-rows: 500px 500px 500px 500px 500px;
+    text-align: center;
+    line-height: 500px;
+    font-size: 200px;
+    color: rgb(255, 255, 255);
+}
 body{
     display: grid;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: rgb(127, 229, 255);
+    background-color: rgb(36, 163, 249);
+}
+.Titulo{
+    align-items: center;
+    font-size: 240px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    tex
+}
+.botaoNumero{
+    border: 10px solid rgb(255, 255, 255);
+}
+.botaoOperador{
+    border: 10px solid rgb(255, 255, 255);
+}
+#virgula{
+    border: 10px solid rgb(255, 255, 255);
+}
+#igual{
+    border: 10px solid rgb(255, 255, 255);
+}
+.botaoNumero:hover{
+    background-color: rgb(122, 193, 255);
+}
+.botaoOperador:hover{
+background-color: rgb(122, 193, 255);
+}
+#virgula:hover{
+    background-color: rgb(122, 193, 255);
+}
+#igual:hover{
+    background-color: rgb(226, 87, 87);
 }
