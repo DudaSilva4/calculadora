@@ -1,53 +1,75 @@
+#visor {
+    display: grid;
+    grid-column: 1/span 4;
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
 
-#tela{
-    display: grid;
-   grid-column: 1/span 4;
-   border: 10px solid rgb(255, 255, 255);
+#botaoC {
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-#botao{
+
+#botao {
     display: grid;
-    grid-template-columns: 500px 500px 500px 500px;
-    grid-template-rows: 500px 500px 500px 500px 500px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
     text-align: center;
-    line-height: 500px;
-    font-size: 200px;
+    line-height: 100px;
+    font-size: 50px;
     color: rgb(255, 255, 255);
+    box-shadow: 20px 20px 20px rgb(249, 229, 246);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-body{
+
+body {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(36, 163, 249);
+    background-color: rgb(238, 171, 243);
 }
-.Titulo{
-    align-items: center;
-    font-size: 240px;
-    color: whitesmoke;
-    text-shadow: 3px 3px 5px rgb(255, 255, 255);
-    tex
+.botaoNumero {
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-.botaoNumero{
-    border: 10px solid rgb(255, 255, 255);
+
+.botaoOperador {
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-.botaoOperador{
-    border: 10px solid rgb(255, 255, 255);
+
+#virgula {
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-#virgula{
-    border: 10px solid rgb(255, 255, 255);
+
+#igual {
+    display: grid;
+    grid-column: 1/span 4;
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
-#igual{
-    border: 10px solid rgb(255, 255, 255);
-}
-.botaoNumero:hover{
+
+.botaoNumero:hover {
     background-color: rgb(122, 193, 255);
 }
-.botaoOperador:hover{
-background-color: rgb(122, 193, 255);
+
+.botaoOperador:hover {
+    background-color: rgb(244, 122, 255);
 }
-#virgula:hover{
-    background-color: rgb(122, 193, 255);
+
+#virgula:hover {
+    background-color: rgb(204, 122, 255);
 }
-#igual:hover{
+
+#igual:hover {
+    background-color: rgb(107, 234, 103);
+}
+
+#botaoC:hover {
     background-color: rgb(226, 87, 87);
+}
+#visor:hover{
+    background-color: rgb(133, 198, 255);
 }
