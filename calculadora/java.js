@@ -32,6 +32,7 @@ botaoC.addEventListener("click", limpa_visor);
 function limpa_visor(event) {
     visor.innerHTML = "";
 }
+
 igual.addEventListener(`click`, calcula_resultado);
 
 function calcula_resultado(event) {
@@ -52,6 +53,19 @@ function executa_operacao(valor1, operador, valor2) {
         return valor1 / valor2
     }
 }
+let Ponto = document.getElementById(`botaoPonto`);
+Ponto.addEventListener(`click`, click_ponto);
+
+function click_ponto(event){
+    if(isNaN(visor.innerHTML) === true){
+        visor.innerHTML = ".";
+    }else if(isNaN (visor.innerHTML+".") === false)
+    visor.innerHTML = visor.innerHTML + ".";
+
+    
+}
+
+
 let body = document.getElementsByTagName(`body`)[0];
 body.addEventListener(`keydown`, pressionou_tecla);
 
@@ -64,5 +78,45 @@ function pressionou_tecla(event) {
         document.getElementById(`adicao`).click();
     } else if (event.key === "-") {
         document.getElementById(`subtracao`).click();
-    }
+    }else if(event.key === "7"){
+        document.getElementById(`botao7`).click();
+    }else if(event.key === "8"){
+        document.getElementById(`botao8`).click();
+    }else if(event.key === "9"){
+        document.getElementById(`botao9`).click();
+    }else if(event.key === "4"){
+        document.getElementById(`botao4`).click();
+    }else if(event.key === "5"){
+        document.getElementById(`botao5`).click();
+    }else if(event.key === "6"){
+        document.getElementById(`botao6`).click();
+    }else if(event.key === "1"){
+        document.getElementById(`botao1`).click();
+    }else if(event.key === "2"){
+        document.getElementById(`botao2`).click();
+    }else if(event.key === "3"){
+        document.getElementById(`botao3`).click();
+    }else if(event.key === "0"){
+        document.getElementById(`botao0`).click();
+    }else if(event.key === "Escape"){
+        document.getElementById(`botaoC`).click();
+    }else if(event.key === "Enter"){
+        document.getElementById(`igual`).click();
+    }else if(event.key === "."){
+        document.getElementById(`botaoPonto`).click(); 
+    }       
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
